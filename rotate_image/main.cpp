@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 #include <vector>
 
 using namespace std;
@@ -15,19 +16,19 @@ public:
         }
     }
 
-    void reverse(vector<int>& v) {
-        int l = 0;
-        int h = v.size() - 1;
-        while (l < h) {
-            swap(v[l], v[h]);
-            l++;
-            h--;
-        }
-    }
+    // void reverse(vector<int>& v) {
+    //     int l = 0;
+    //     int h = v.size() - 1;
+    //     while (l < h) {
+    //         swap(v[l], v[h]);
+    //         l++;
+    //         h--;
+    //     }
+    // }
 
     void reverse_rows(vector<vector<int>>& m) {
         for (int i = 0; i < m.size(); i++) {
-            reverse(m[i]);
+            reverse(m[i].begin(), m[i].end());
         }
     }
 
