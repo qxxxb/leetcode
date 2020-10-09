@@ -1,3 +1,3 @@
 # Leetcode Submissions
 
-My personal Leetcode submissions.
+My Leetcode submissions
